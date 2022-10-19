@@ -195,6 +195,20 @@ footer {
   margin: 100px auto;
 }
 
+li {
+  list-style: none;
+}
+
+i {
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 @media (max-width: 480px) {
   .innerWrapper {
     width: 90%;
@@ -348,7 +362,6 @@ nav ul li {
   background-position: center;
 }
 #skills ul {
-  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -396,8 +409,6 @@ nav ul li {
 }
 #skills i {
   font-size: 5rem;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
 }
 
 @media (max-width: 900px) {
@@ -421,7 +432,96 @@ nav ul li {
   min-height: 40vh;
   background-image: linear-gradient(174deg, black 50%, #7F5A83 calc(50% + 2px));
 }
+#contact li {
+  font-size: 3rem;
+}
+#contact li:hover i {
+  color: lightblue;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
 
+.contactContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contactForm {
+  width: 60%;
+  background-color: #A188A6;
+  padding: 50px;
+  -webkit-box-shadow: 20px 20px rgba(0, 0, 0, 0.3);
+          box-shadow: 20px 20px rgba(0, 0, 0, 0.3);
+}
+.contactForm form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+.contactForm form input {
+  height: 2rem;
+}
+.contactForm form textarea {
+  height: 10rem;
+  resize: none;
+}
+.contactForm form button {
+  margin: 10px auto 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: white;
+  color: black;
+  border: none;
+  padding: 1rem 2rem;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.contactLinks ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+  padding: 3rem;
+}
+
+@media (max-width: 480px) {
+  .contactContent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactForm {
+    width: 100%;
+    padding: 25px;
+  }
+  .contactLinks ul {
+    padding: 0;
+    margin-top: 2rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: space-between;
+        -ms-flex-align: space-between;
+            align-items: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
 footer {
   background-color: #7F5A83;
   color: #fff;

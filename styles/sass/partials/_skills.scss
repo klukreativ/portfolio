@@ -7,7 +7,6 @@
     background-position: center;
 
     ul {
-        list-style: none;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -44,7 +43,6 @@
 
     i {
         font-size: 5rem;
-        transition: 0.5s ease-in-out;
     }
 }
 

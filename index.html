@@ -32,8 +32,8 @@
                 <div class="aboutTriangleContainer">
                     <img src="./assets/images/secTri.png" alt="decorative triangle" class="aboutTriangle">
                 </div>
-                
-                <div class="aboutContent innerWrapper">                    
+
+                <div class="aboutContent innerWrapper">
                     <div class="aboutImgContainer">
                         <img src="./assets/images/profile.jpg" alt="" class="aboutImage">
                     </div>
@@ -96,22 +96,34 @@
                 <div class="innerWrapper">
                     <h2> Projects</h2>
                     <!-- gonna add JS to populate this section -->
-                </div>                
+                </div>
             </section>
             <section id="contact">
                 <div class="innerWrapper">
                     <h2>Contact Me</h2>
-                    <!-- add form & links -->
-                    <form action="">
-                        <label for="name">name</label>
-                        <input type="text">
-                        <label for="name">E-mail</label>
-                        <input type="email">
-                        <label for="name">name</label>
-                        <input type="textarea">
-                    </form>
+                    <div class="contactContent">
+                        <div class="contactForm">
+                            <form action="" id="contactMe">
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="name" required>
+                                <label for="email">E-mail:</label>
+                                <input type="email" id="email" name="email" required>
+                                <label for="message">Message:</label>
+                                <textarea id="message" name="message" form="contactMe" required></textarea>
+                                <button type="submit" form="contactMe" value="Submit">Submit</button>
+                            </form>
+                        </div>
+                        <div class="contactLinks">
+                            <ul>
+                                <li><a href="https://www.linkedin.com/in/karl-lu/"><i class="fa-brands fa-linkedin"></i></a></li>
+                                <li><a href="https://github.com/lunarpirate"><i class="fa-brands fa-github"></i></a></li>
+                                <li><i class="fa-solid fa-envelope"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+
                 </div>
-                
+
             </section>
         </div>
         <script src="https://kit.fontawesome.com/caaf7d8a53.js" crossorigin="anonymous"></script>

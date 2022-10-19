@@ -17,6 +17,19 @@
     margin: 100px auto;
 }
 
+li {
+    list-style: none;
+}
+
+i {
+    transition: 0.5s ease-in-out;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
 @media (max-width: 480px) {
     .innerWrapper {
         width: 90%;
