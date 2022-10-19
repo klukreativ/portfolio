@@ -192,7 +192,7 @@ footer {
 
 .innerWrapper {
   width: 80%;
-  margin: auto;
+  margin: 100px auto;
 }
 
 @media (max-width: 480px) {
@@ -201,13 +201,24 @@ footer {
   }
 }
 h1 {
-  font-size: 6rem;
+  font-size: 8rem;
+  margin-bottom: 1rem;
 }
 
 h2 {
   font-size: 3rem;
 }
 
+h3 {
+  font-size: 2rem;
+  padding: 0 0.35rem;
+}
+
+@media (max-width: 720px) {
+  h2 {
+    font-size: 2.2rem;
+  }
+}
 header {
   height: 10vh;
   background-color: #7F5A83;
@@ -215,8 +226,15 @@ header {
 
 nav {
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 nav ul {
+  padding: 1rem 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -231,18 +249,29 @@ nav ul li {
   text-transform: uppercase;
 }
 
+@media (max-width: 480px) {
+  nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  nav ul li {
+    font-size: 1.2rem;
+  }
+}
 #intro {
   min-height: 90vh;
   height: 300px;
   background-image: linear-gradient(188deg, #7F5A83 30%, black calc(30% + 2px));
 }
-
-.innerWrapper {
+#intro .innerWrapper {
   margin-top: 250px;
 }
 
 #about {
   min-height: 40vh;
+  width: 100%;
 }
 
 .aboutContent {
@@ -253,6 +282,7 @@ nav ul li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 50px;
 }
 
 .aboutImgContainer {
@@ -266,10 +296,23 @@ nav ul li {
 
 .aboutContentContainer {
   width: 75%;
-  padding: 0 2rem;
+  padding: 1rem 2rem;
 }
 .aboutContentContainer h2 {
   margin-top: 0;
+}
+
+.aboutTriangleContainer {
+  width: 99.95%;
+  min-height: 500px;
+  position: absolute;
+  overflow: hidden;
+}
+
+.aboutTriangle {
+  position: absolute;
+  z-index: -1;
+  overflow: hidden;
 }
 
 @media (max-width: 900px) {
@@ -294,11 +337,15 @@ nav ul li {
   .aboutImgContainer {
     width: 90%;
   }
+  .aboutContentContainer {
+    margin-top: 50px;
+  }
 }
 #skills {
   min-height: 40vh;
-  width: 80%;
   margin: auto;
+  background-image: url("../assets/images/secondaryBar.png");
+  background-position: center;
 }
 #skills ul {
   list-style: none;
@@ -323,17 +370,34 @@ nav ul li {
   -webkit-box-align: space-between;
       -ms-flex-align: space-between;
           align-items: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 50px;
 }
+#skills li:hover i {
+  color: lightblue;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+#skills li:hover span {
+  color: lightblue;
+  opacity: 1;
+}
+#skills span {
+  margin-top: 20px;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
 #skills i {
   font-size: 5rem;
-}
-
-.skillsContent {
-  padding: 0;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 @media (max-width: 900px) {
@@ -342,8 +406,11 @@ nav ul li {
   }
 }
 @media (max-width: 480px) {
-  #skills {
-    width: 90%;
+  #skills i {
+    font-size: 3rem;
+  }
+  #skills span {
+    display: none;
   }
 }
 #projects {

@@ -7,15 +7,28 @@ header {
 
 nav {
     margin: 0;
+    display: flex;
+    justify-content: flex-end;
 
     ul {
+        padding: 1rem 2rem;
         display: flex;
         align-items: flex-end;
         gap: 20px;
+
         li {
             list-style: none;
             font-size: 1.7rem;
             text-transform: uppercase;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        li {
+            font-size: 1.2rem;
         }
     }
 }

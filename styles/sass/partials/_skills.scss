@@ -1,7 +1,10 @@
+@use './variables' as *;
+
 #skills {
     min-height: 40vh;
-    width: 80%;
     margin: auto;
+    background-image: url("../assets/images/secondaryBar.png");
+    background-position: center;
 
     ul {
         list-style: none;
@@ -16,18 +19,36 @@
         width: 25%;
         display: flex;
         align-items: space-between;
+        flex-direction: column;
         justify-content: center;
         margin-bottom: 50px;
+        
+    }
+
+    li:hover{
+        i {
+            color: lightblue;
+            transform: scale(1.2);
+        }
+        span {
+            color: lightblue;
+            opacity: 1;
+        }
+    }
+
+    span {
+        margin-top: 20px;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
     }
 
     i {
         font-size: 5rem;
+        transition: 0.5s ease-in-out;
     }
 }
 
-.skillsContent {
-    padding: 0;
-}
+
 
 @media (max-width: 900px) {
     #skills {
@@ -40,6 +61,11 @@
 
 @media (max-width: 480px) {
     #skills {
-        width: 90%;
+        i {
+            font-size: 3rem;
+        }
+        span {
+            display: none;
+        }
     }
 }
