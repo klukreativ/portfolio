@@ -1,0 +1,11 @@
+@use './variables' as *;
+
+#intro {
+    min-height: 90vh;
+    height: 300px;
+    background-image: linear-gradient(188deg, $primaryColor 30%, black calc(30% + 2px));
+}
+
+.innerWrapper {
+    margin-top: 250px;
+}

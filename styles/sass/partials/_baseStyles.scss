@@ -1,0 +1,22 @@
+.darkMode {
+    background-color: black;
+    color: white;
+    max-width: 1920px;
+    margin: auto;
+}
+
+.center {
+    margin: auto;
+    text-align: center;
+}
+
+.innerWrapper {
+    width: 80%;
+    margin: auto;
+}
+
+@media (max-width: 480px) {
+    .innerWrapper {
+        width: 90%;
+    }
+}

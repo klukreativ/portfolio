@@ -1,26 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
     <title>Karl Lu | Web Developer</title>
 </head>
-<body>
+
+<body class="darkMode">
     <header>
         <nav>
-
+            <ul>
+                <li>About</li>
+                <li>Projects</li>
+                <li>Contact</li>
+            </ul>
         </nav>
     </header>
 
     <main>
-        <wrapper>
+        <div class="wrapper">
+            <section id="intro">
+                <div class="innerWrapper">
+                    <h1>Karl Lu</h1>
+                    <h2>Web Developer</h2>
+                </div>
+            </section>
+            <section id="about">
+                <div class="aboutContent innerWrapper">
+                    <div class="aboutImgContainer">
+                        <img src="./assets/images/profile.jpg" alt="" class="aboutImage">
+                    </div>
+                    <div class="aboutContentContainer">
+                        <h2>About Me</h2>
+                        <p>
+                            Hi, I'm a Frontend Web Developer with skills in HTML5, CSS3, Javascript, and React.js. I'm
+                            currently enrolled in Juno College of Technology where I've had the chance to develop these
+                            skills both in class and through self study to create both personal and group projects. As a
+                            tech enthusiast and a lover of all things Microsoft, my recent foray into the tech field has
+                            been an exciting journey and one I continually to grow more passionate about.
+                            <br /><br />
+                            I've had over 10 years of experience in communication based fields, both in education and
+                            sales, as well as in various capacities including management. From teaching elementary and
+                            middle-school students to assessing the needs of my clients, I've learned the importance of
+                            adapting my approach to custom tailor a situation for whomever I'm working with. I've found
+                            great satisfaction from finding the perfect solution for my clients, as well as helping my
+                            students succeed both in their personal goals as well as various competitions I've coached
+                            them.
+                            <br /><br />
+                            I'm looking to leverage these skills in my tech based career, and looking forward to working
+                            in a team based environment where I can continue to practice my craft and increase my
+                            knowledge in related fields. Collaboration is an important skill I acquired when working in
+                            a team management setting, where I've had the chance to apply my own strengths as well as
+                            continue my own personal development under the tutelage of others.<br /><br />
+                            When I'm not practicing or learning code, you can likely find me hunched over my desk to
+                            engage in my lifelong love of painting miniatures, tossing dice in a board game or session
+                            of AD&D, adding too many chilis to my latest dish, exploring new trails with my dogs, or
+                            searching for hidden treasures at my local thrift shop.
+                        </p>
+                    </div>
+                </div>
 
-        </wrapper>
+            </section>
+            <section id="skills">
+                <div class="skillsContent innerWrapper">
+                    <fieldset class="center">
+                        <legend>
+                            <h2>My Tech Stack</h2>
+                        </legend>
+                        <ul>
+                            <li><i class="fa-brands fa-html5"></i></li>
+                            <li><i class="fa-brands fa-css3-alt"></i></li>
+                            <li><i class="fa-brands fa-square-js"></i></li>
+                            <li><i class="fa-brands fa-sass"></i></li>
+                            <li><i class="fa-brands fa-node-js"></i></li>
+                            <li><i class="fa-brands fa-react"></i></li>
+                            <li><i class="fa-solid fa-c"></i></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </fieldset>
+
+                </div>
+            </section>
+            <section id="projects">
+                <div class="innerWrapper">
+                    <h2> Projects</h2>
+                    <!-- gonna add JS to populate this section -->
+                </div>                
+            </section>
+            <section id="contact">
+                <div class="innerWrapper">
+                    <h2>Contact Me</h2>
+                    <!-- add form & links -->
+                    <form action="">
+                        <label for="name">name</label>
+                        <input type="text">
+                        <label for="name">E-mail</label>
+                        <input type="email">
+                        <label for="name">name</label>
+                        <input type="textarea">
+                    </form>
+                </div>
+                
+            </section>
+        </div>
+        <script src="https://kit.fontawesome.com/caaf7d8a53.js" crossorigin="anonymous"></script>
     </main>
 
-    <footer>
-        
+    <footer class="center">
+        <p>Designed by Karl Lu 2022</p>
     </footer>
 </body>
+
 </html>
