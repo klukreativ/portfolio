@@ -1,5 +1,8 @@
 @use './variables' as *;
 
+html {
+    scroll-behavior: smooth;
+}
 .darkMode {
     background-color: black;
     color: white;

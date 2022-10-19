@@ -178,6 +178,10 @@ footer {
   padding: 1px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .darkMode {
   background-color: black;
   color: white;
