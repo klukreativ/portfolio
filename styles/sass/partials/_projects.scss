@@ -2,13 +2,24 @@
 
 #projects {
     min-height: 40vh;
-    p{text-shadow: none;}
+
+    p {
+        text-shadow: none;
+    }
+
+    h2 {
+        width: 80%;
+        margin: auto;
+        padding: 3rem 0;
+    }
 }
+
 .projectContainer {
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
+
 .project {
     display: flex;
     width: 80%;
@@ -19,10 +30,12 @@
 .left {
     flex-direction: row-reverse;
     padding-left: 100px;
+
     .projectContentContainer {
         text-align: right;
         padding-right: 2rem;
     }
+
     .projectTools {
         justify-content: flex-end;
     }
@@ -31,6 +44,7 @@
 .right {
     margin-left: auto;
     padding-right: 100px;
+
     .projectContentContainer {
         padding-left: 2rem;
     }
@@ -40,15 +54,15 @@
     width: 50%;
 
     img {
-       width: 100%;
-       border-radius: 1rem;
+        width: 100%;
+        border-radius: 1rem;
     }
 }
 
 .projectContentContainer {
     width: 50%;
-    
-    h3{
+
+    h3 {
         margin-top: 0;
     }
 }
@@ -60,9 +74,11 @@
     justify-content: space-around;
     font-size: 1.5rem;
     margin-top: 1rem;
+
     a {
         transition: 0.3s ease-in-out;
     }
+
     a:hover {
         color: lightblue;
         transform: scale(1.1);
@@ -71,11 +87,13 @@
 
 .projectTools {
     display: flex;
-    
+    flex-wrap: wrap;
     gap: 20px;
+
     i {
         font-size: 2.2rem;
         z-index: 1;
+
         &:hover {
             color: lightblue;
             transform: scale(1.5);
@@ -87,9 +105,11 @@
     .project {
         padding: 2rem;
     }
+
     .left {
         padding-left: 5rem;
     }
+
     .right {
         padding-right: 5rem;
     }
@@ -97,10 +117,15 @@
 
 @media (max-width: 900px) {
     #projects {
-        h3{
+        h2 {
+            width: 90%;
+            padding: 2rem 0;
+        }
+        h3 {
             text-align: center;
         }
     }
+
     .project {
         width: 95%;
         flex-direction: column;
@@ -114,7 +139,8 @@
         border-radius: 1rem 0 0 1rem;
     }
 
-    .left, .right {
+    .left,
+    .right {
         padding: 1.5rem;
     }
 
@@ -128,6 +154,7 @@
             text-align: left;
             padding-right: 0;
         }
+
         .projectTools {
             justify-content: flex-start;
         }
@@ -136,9 +163,10 @@
     .right .projectContentContainer {
         padding-left: 0;
     }
+
     .projectContentContainer {
-        width: 100%;        
-        
+        width: 100%;
+
         h3 {
             margin-top: 32px;
         }
@@ -154,7 +182,7 @@
         width: 100%;
     }
 
-    .projectTools i{
+    .projectTools i {
         pointer-events: none;
     }
 }

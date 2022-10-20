@@ -8,11 +8,9 @@
     li {
         font-size: 3rem;
 
-        &:hover {
-            i {
-                color: lightblue;
-                transform: scale(1.2);
-            }
+        i:hover {
+            color: lightblue;
+            transform: scale(1.2);
         }
     }
 }
@@ -70,14 +68,25 @@
 }
 
 .exitBlurb {
-    padding: 0 3rem;
-
+    margin-left: 3rem;
+    padding: 1rem 2rem;
+    background-color: $secondaryColor;
+    box-shadow: 20px 20px rgba(0, 0, 0, 0.3);
     p {
         font-size: 1.3rem;
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1440px) {
+    .contactLinks ul {
+        margin-top: 2rem;
+        flex-direction: row;
+        gap: 2rem;
+
+    }
+}
+
+@media (max-width: 1080px) {
     .contactContent {
         flex-direction: column-reverse;
     }
@@ -99,9 +108,16 @@
     }
 
     .exitBlurb {
-        padding: 1rem;
-        p{
+        padding: 2rem;
+        margin: 0;
+        p {
             font-size: 1.2rem;
         }
+    }
+}
+
+@media (max-width: 480px) {
+    .contactForm, .exitBlurb {
+        border-radius: 1rem;
     }
 }

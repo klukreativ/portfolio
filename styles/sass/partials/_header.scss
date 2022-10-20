@@ -3,7 +3,6 @@
 header {
     height: 10vh;
     background-color: $primaryColor;
-    margin-bottom: -1vh;
 }
 
 nav {
@@ -15,7 +14,7 @@ nav {
         padding: 1rem 2rem;
         display: flex;
         align-items: flex-end;
-        gap: 20px;
+        gap: 3rem;
 
         li {
             list-style: none;
@@ -25,9 +24,16 @@ nav {
     }
 }
 
+@media (max-width: 900px) {
+     nav ul {
+        gap: 2rem;
+    }
+}
+
 @media (max-width: 480px) {
     nav ul {
         flex-direction: column;
+        gap: 1rem;
         li {
             font-size: 1.5rem;
         }

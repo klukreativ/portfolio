@@ -279,7 +279,6 @@ strong {
 header {
   height: 10vh;
   background-color: #7F5A83;
-  margin-bottom: -1vh;
 }
 
 nav {
@@ -299,7 +298,7 @@ nav ul {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  gap: 20px;
+  gap: 3rem;
 }
 nav ul li {
   list-style: none;
@@ -307,12 +306,18 @@ nav ul li {
   text-transform: uppercase;
 }
 
+@media (max-width: 900px) {
+  nav ul {
+    gap: 2rem;
+  }
+}
 @media (max-width: 480px) {
   nav ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    gap: 1rem;
   }
   nav ul li {
     font-size: 1.5rem;
@@ -488,6 +493,11 @@ nav ul li {
 #projects p {
   text-shadow: none;
 }
+#projects h2 {
+  width: 80%;
+  margin: auto;
+  padding: 3rem 0;
+}
 
 .projectContainer {
   display: -webkit-box;
@@ -574,6 +584,8 @@ nav ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 20px;
 }
 .projectTools i {
@@ -598,6 +610,10 @@ nav ul li {
   }
 }
 @media (max-width: 900px) {
+  #projects h2 {
+    width: 90%;
+    padding: 2rem 0;
+  }
   #projects h3 {
     text-align: center;
   }
@@ -614,7 +630,8 @@ nav ul li {
   .right {
     border-radius: 1rem 0 0 1rem;
   }
-  .left, .right {
+  .left,
+.right {
     padding: 1.5rem;
   }
   .projectImgContainer {
@@ -660,7 +677,7 @@ nav ul li {
 #contact li {
   font-size: 3rem;
 }
-#contact li:hover i {
+#contact li i:hover {
   color: lightblue;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
@@ -728,13 +745,27 @@ nav ul li {
 }
 
 .exitBlurb {
-  padding: 0 3rem;
+  margin-left: 3rem;
+  padding: 1rem 2rem;
+  background-color: #A188A6;
+  -webkit-box-shadow: 20px 20px rgba(0, 0, 0, 0.3);
+          box-shadow: 20px 20px rgba(0, 0, 0, 0.3);
 }
 .exitBlurb p {
   font-size: 1.3rem;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1440px) {
+  .contactLinks ul {
+    margin-top: 2rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 2rem;
+  }
+}
+@media (max-width: 1080px) {
   .contactContent {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -762,10 +793,16 @@ nav ul li {
         justify-content: space-around;
   }
   .exitBlurb {
-    padding: 1rem;
+    padding: 2rem;
+    margin: 0;
   }
   .exitBlurb p {
     font-size: 1.2rem;
+  }
+}
+@media (max-width: 480px) {
+  .contactForm, .exitBlurb {
+    border-radius: 1rem;
   }
 }
 footer {
