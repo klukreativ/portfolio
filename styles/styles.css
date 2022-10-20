@@ -213,6 +213,26 @@ a {
   text-decoration: none;
 }
 
+#backToTop {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+}
+
+.backToTopBtn {
+  background-color: #C9C19F;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 3rem;
+}
+
 @media (max-width: 480px) {
   .innerWrapper {
     width: 90%;
@@ -230,6 +250,11 @@ h2 {
 h3 {
   font-size: 2rem;
   padding: 0 0.35rem;
+}
+
+p {
+  font-size: 1.2rem;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 720px) {
@@ -310,6 +335,7 @@ nav ul li {
 .aboutImage {
   width: 100%;
   border-radius: 50%;
+  border: solid 5px black;
 }
 
 .aboutContentContainer {

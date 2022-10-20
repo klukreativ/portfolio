@@ -33,6 +33,24 @@ a {
     text-decoration: none;
 }
 
+#backToTop{
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    
+}
+
+.backToTopBtn {
+    background-color: $accentColorTwo;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    
+}
+
 @media (max-width: 480px) {
     .innerWrapper {
         width: 90%;
