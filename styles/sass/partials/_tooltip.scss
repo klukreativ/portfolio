@@ -28,3 +28,10 @@
     padding: 0.5rem;
     font-weight: normal;
 }
+
+// tooltips adds extra blank space on smaller screens, also unnecessary for touchscreen
+@media (max-width: 480px) {
+    .tooltipText {
+        display: none;
+    }
+}

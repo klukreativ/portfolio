@@ -1,7 +1,7 @@
 @use './variables' as *;
 
 #about {
-    min-height: 40vh;
+    min-height: 60vh;
     width: 100%;
 }
 
@@ -27,6 +27,9 @@
     padding: 1rem 2rem;
     h2 {
         margin-top: 0;
+    }
+    p {
+        font-size: 1.3rem;
     }
 }
 

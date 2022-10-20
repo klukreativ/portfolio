@@ -2,6 +2,7 @@
 
 #projects {
     min-height: 40vh;
+    p{text-shadow: none;}
 }
 .projectContainer {
     display: flex;
@@ -18,11 +19,21 @@
 .left {
     flex-direction: row-reverse;
     padding-left: 100px;
+    .projectContentContainer {
+        text-align: right;
+        padding-right: 2rem;
+    }
+    .projectTools {
+        justify-content: flex-end;
+    }
 }
 
 .right {
     margin-left: auto;
     padding-right: 100px;
+    .projectContentContainer {
+        padding-left: 2rem;
+    }
 }
 
 .projectImgContainer {
@@ -36,6 +47,10 @@
 
 .projectContentContainer {
     width: 50%;
+    
+    h3{
+        margin-top: 0;
+    }
 }
 
 .projectLinks {
@@ -43,13 +58,28 @@
     margin: auto;
     display: flex;
     justify-content: space-around;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    a {
+        transition: 0.3s ease-in-out;
+    }
+    a:hover {
+        color: lightblue;
+        transform: scale(1.1);
+    }
 }
 
 .projectTools {
     display: flex;
+    
     gap: 20px;
     i {
-        font-size: 2rem;
+        font-size: 2.2rem;
+        z-index: 1;
+        &:hover {
+            color: lightblue;
+            transform: scale(1.5);
+        }
     }
 }
 
@@ -63,15 +93,25 @@
     .right {
         padding-right: 5rem;
     }
-    .projectTools i {
-        font-size: 1.6rem;
-    }
 }
 
 @media (max-width: 900px) {
+    #projects {
+        h3{
+            text-align: center;
+        }
+    }
     .project {
         width: 95%;
         flex-direction: column;
+    }
+
+    .left {
+        border-radius: 0 1rem 1rem 0;
+    }
+
+    .right {
+        border-radius: 1rem 0 0 1rem;
     }
 
     .left, .right {
@@ -82,13 +122,39 @@
         width: 70%;
         margin: auto;
     }
-    projectContentContainer {
-        width: 100%;
+
+    .left {
+        .projectContentContainer {
+            text-align: left;
+            padding-right: 0;
+        }
+        .projectTools {
+            justify-content: flex-start;
+        }
+    }
+
+    .right .projectContentContainer {
+        padding-left: 0;
+    }
+    .projectContentContainer {
+        width: 100%;        
+        
+        h3 {
+            margin-top: 32px;
+        }
+    }
+
+    .projectTools {
+        flex-wrap: wrap;
     }
 }
 
 @media (max-width: 480px) {
     .projectImgContainer {
         width: 100%;
+    }
+
+    .projectTools i{
+        pointer-events: none;
     }
 }

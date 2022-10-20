@@ -3,6 +3,10 @@
 html {
     scroll-behavior: smooth;
 }
+
+.body {
+    max-width: 1440px;
+}
 .darkMode {
     background-color: black;
     color: white;
@@ -37,7 +41,6 @@ a {
     position: fixed;
     right: 2rem;
     bottom: 2rem;
-    
 }
 
 .backToTopBtn {
@@ -47,8 +50,8 @@ a {
     border-radius: 50%;
     display: flex;
     justify-content: center;
-    font-size: 3rem;
-    padding-top: 0.5rem;
+    align-items: center;
+    font-size: 1.75rem;
 }
 
 @media (max-width: 480px) {

@@ -3,6 +3,7 @@
 header {
     height: 10vh;
     background-color: $primaryColor;
+    margin-bottom: -1vh;
 }
 
 nav {
@@ -28,7 +29,7 @@ nav {
     nav ul {
         flex-direction: column;
         li {
-            font-size: 1.2rem;
+            font-size: 1.5rem;
         }
     }
 }
