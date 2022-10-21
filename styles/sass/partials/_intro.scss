@@ -2,9 +2,19 @@
 
 #intro {
     min-height: 90vh;
-    height: 300px;
-    background-image: linear-gradient(188deg, $primaryColor 30%, black calc(30% + 2px));
+    height: 300px;    
     .innerWrapper {
         margin-top: 250px;
     }
+}
+
+#intro.darkMode {
+    background-image: linear-gradient(188deg, $primaryColor 30%, black calc(30% + 2px));
+    h1, h3 {
+        color: white;
+    }
+}
+
+#intro.lightMode {
+    background-image: linear-gradient(188deg, $primaryColor 30%, white calc(30% + 2px));
 }
