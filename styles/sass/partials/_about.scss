@@ -3,6 +3,7 @@
 #about {
     min-height: 60vh;
     width: 100%;
+    padding: 0;
 }
 
 .aboutContent {
@@ -14,6 +15,7 @@
 
 .aboutImgContainer {
     width: 25%;
+    margin-top: 50px;
 }
 
 .aboutImage {
@@ -62,8 +64,10 @@
 @media (max-width: 480px) {
     .aboutImgContainer {
         width: 90%;
+        margin-top: 50px;
     }
     .aboutContentContainer {
         margin-top: 50px;
+        padding: 0.5rem;
     }
 }

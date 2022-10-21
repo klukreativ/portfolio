@@ -19,7 +19,7 @@
 }
 
 #contact.lightMode {
-    background-image: linear-gradient(174deg, white 50%, $primaryColor calc(50% + 2px));
+    background-image: linear-gradient(174deg, lavender 50%, $primaryColor calc(50% + 2px));
 }
 .contactContent {
     display: flex;
@@ -125,5 +125,6 @@
 @media (max-width: 480px) {
     .contactForm, .exitBlurb {
         border-radius: 1rem;
+        box-shadow: 20px 20px rgba(0, 0, 0, 0.1);
     }
 }
