@@ -3,8 +3,10 @@
 #skills {
     min-height: 50vh;
     margin: auto;
-    background-image: url("../assets/images/secondaryBar.png");
+    background-image: url("../assets/images/secondaryBar.svg");
     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 
     fieldset {
         border: solid white 3px;
