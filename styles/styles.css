@@ -575,14 +575,14 @@ nav ul li:hover:after {
   }
 }
 @media (max-width: 480px) {
+  #skills ul {
+    margin-bottom: -20px;
+  }
   #skills li {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
   #skills i {
     font-size: 3rem;
-  }
-  #skills span {
-    display: none;
   }
 }
 #projects {
