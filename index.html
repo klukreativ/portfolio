@@ -20,7 +20,7 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <div class="switch">
+            <div class="switch" aria-label="dark mode switch">
                 <label class="theme-switch" for="checkbox">
                     <input type="checkbox" id="checkbox" />
                     <div class="darkModeSlider round"></div>
@@ -31,20 +31,20 @@
 
     <main>
         <div class="wrapper">
-            <section id="intro" class = "themed darkMode">
+            <section id="intro" class="themed darkMode">
                 <div class="innerWrapper">
                     <h1>Karl Lu</h1>
                     <h3>Frontend Web Developer</h2>
                 </div>
             </section>
             <section id="about">
-                <div class="aboutTriangleContainer">
+                <div class="aboutTriangleContainer" aria-hidden="true">
                     <img src="./assets/images/secTri.png" alt="decorative triangle" class="aboutTriangle">
                 </div>
 
                 <div class="aboutContent innerWrapper">
                     <div class="aboutImgContainer reveal fade-left">
-                        <img src="./assets/images/profile.jpg" alt="" class="aboutImage">
+                        <img src="./assets/images/profile.jpg" alt="profile image of Karl" class="aboutImage">
                     </div>
                     <div class="aboutContentContainer reveal fade-right">
                         <h2>. &frasl;about</h2>
@@ -96,7 +96,7 @@
                 </div>
             </section>
             <section id="projects">
-                    <h2>. &frasl;projects</h2>
+                <h2>. &frasl;projects</h2>
                 <div class="projectContainer">
                     <div class="project left reveal fade-left">
                         <div class="projectImgContainer">
@@ -107,21 +107,16 @@
                             </div>
                         </div>
                         <div class="projectContentContainer">
-                            <!-- title -->
                             <h3>Drink O'Clock</h3>
-                            <!-- tools used-->
                             <h4>built with:</h4>
                             <div class="projectTools">
                                 <i class="fa-brands fa-html5 tooltip"><span class="tooltipText">HTML5</span></i>
                                 <i class="fa-brands fa-css3-alt tooltip"><span class="tooltipText">CSS3</span></i>
                                 <i class="fa-brands fa-sass tooltip"><span class="tooltipText">SASS</span></i>
-
                                 <i class="fa-brands fa-node-js tooltip"><span class="tooltipText">JavaScript</span></i>
                                 <i class="fa-solid fa-gears tooltip"><span class="tooltipText">REST APIs</span></i>
-                                <i class="fa-solid fa-mobile-screen tooltip"><span
-                                        class="tooltipText">Responsive</span></i>
-                                <i class="fa-brands fa-accessible-icon tooltip"><span
-                                        class="tooltipText">Accessible</span></i>
+                                <i class="fa-solid fa-mobile-screen tooltip"><span  class="tooltipText">Responsive</span></i>
+                                <i class="fa-brands fa-accessible-icon tooltip"><span class="tooltipText">Accessible</span></i>
                             </div>
                             <p>
                                 A drink recipe app that finds the perfect drink for the user based on their alcohol
@@ -164,33 +159,28 @@
                             </div>
                         </div>
                         <div class="projectContentContainer">
-                            <!-- title -->
                             <h3>Uvaro Podcast Page</h3>
-                            <!-- tools used-->
                             <h4>built with:</h4>
                             <div class="projectTools">
                                 <i class="fa-brands fa-html5 tooltip"><span class="tooltipText">HTML5</span></i>
                                 <i class="fa-brands fa-css3-alt tooltip"><span class="tooltipText">CSS3</span></i>
+                                <i class="fa-brands fa-node-js tooltip"><span class="tooltipText">JavaScript</span></i>
                                 <i class="devicon-wordpress-plain tooltip">
                                     <span class="tooltipText">WordPress</span></i>
-                                <i class="fa-brands fa-node-js tooltip"><span class="tooltipText">JavaScript</span></i>
                                 <i class="fa-solid fa-mobile-screen tooltip"><span
                                         class="tooltipText">Responsive</span></i>
                                 <i class="fa-brands fa-accessible-icon tooltip"><span
                                         class="tooltipText">Accessible</span></i>
                             </div>
-                            <!-- description -->
                             <p>
                                 Podcast page created for a tech education company using a brief and design files. The
                                 goal was to create a responsive page across devices that pulled the latest podcasts,
                                 youtube videos, and allowed user to subscribe for updates.
                             </p>
-
                         </div>
                     </div>
                 </div>
             </section>
-
 
             <section id="contact" class="themed darkMode">
                 <div class="innerWrapper">
@@ -203,7 +193,8 @@
                                 <label for="email" class="sr-only">E-mail:</label>
                                 <input type="email" id="email" name="email" placeholder="Email" required>
                                 <label for="message" class="sr-only">Message:</label>
-                                <textarea id="message" name="message" form="contactMe" placeholder="Leave a message" required></textarea>
+                                <textarea id="message" name="message" form="contactMe" placeholder="Leave a message"
+                                    required></textarea>
                                 <button type="submit" form="contactMe" value="Submit">Submit</button>
                             </form>
                         </div>
@@ -218,11 +209,8 @@
                                 </p>
                             </div>
                             <ul>
-                                <li><a href="https://www.linkedin.com/in/karl-lu/"><i
-                                            class="fa-brands fa-linkedin"></i></a>
-                                </li>
-                                <li><a href="https://github.com/lunarpirate"><i class="fa-brands fa-github"></i></a>
-                                </li>
+                                <li><a href="https://www.linkedin.com/in/karl-lu/"><i class="fa-brands fa-linkedin"></i></a></li>
+                                <li><a href="https://github.com/lunarpirate"><i class="fa-brands fa-github"></i></a></li>
                                 <li><a href="mailto:karl.lu@outlook.com"><i class="fa-solid fa-envelope"></i></a></li>
                             </ul>
                         </div>
@@ -237,7 +225,7 @@
         <p>Designed by Karl Lu 2022</p>
     </footer>
     <div id="backToTop">
-        <a href="#header">
+        <a href="#header" aria-label="button to top of page">
             <div class="backToTopBtn"><i class="fa-solid fa-chevron-up"></i></div>
         </a>
     </div>
