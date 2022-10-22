@@ -1,5 +1,23 @@
 @use './variables' as *;
 
+@font-face {
+    font-family: "Roboto Regular";
+    src: url('../assets/fonts/Roboto-Regular.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Figtree';
+    src: url('../assets/fonts/Figtree-Regular.ttf');
+    font-weight: normal;
+}
+
+h1,
+h2,
+h3 {
+    font-family: $headingFont;
+}
+
 h1 {
     font-size: 8rem;
     margin-bottom: 1rem;
@@ -11,19 +29,31 @@ h2 {
 
 h3 {
     font-size: 2rem;
-    // padding: 0 0.35rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
 }
 
 p {
+    font-family: $primaryFont;
     font-size: 1.2rem;
 }
 
-strong{
+strong {
     color: $accentColorTwo;
 }
 
 @media (max-width: 720px) {
     h2 {
         font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 6rem;
     }
 }

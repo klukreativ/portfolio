@@ -3,10 +3,8 @@
 #projects {
     min-height: 40vh;
     padding: 0;
-    p {
-        text-shadow: none;
-    }
-
+    text-shadow: 1px 1px rgba(0,0,0,0.3);
+    
     h2 {
         width: 80%;
         margin: auto;
@@ -61,7 +59,7 @@
 
 .projectContentContainer {
     width: 50%;
-
+    color: #fff;
     h3 {
         margin-top: 0;
     }
@@ -74,7 +72,7 @@
     justify-content: space-around;
     font-size: 1.5rem;
     margin-top: 1rem;
-
+    color: #fff;
     a {
         transition: 0.3s ease-in-out;
     }

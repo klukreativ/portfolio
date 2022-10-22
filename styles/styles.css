@@ -189,13 +189,13 @@ body {
 }
 
 body.darkMode {
-  background-color: black;
+  background-color: #1b1b1b;
   color: white;
 }
 
 body.lightMode {
   background-color: lavender;
-  color: black;
+  color: #2b2b2b;
 }
 
 .center {
@@ -254,6 +254,22 @@ a {
     bottom: 1rem;
   }
 }
+@font-face {
+  font-family: "Roboto Regular";
+  src: url("../assets/fonts/Roboto-Regular.ttf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Figtree";
+  src: url("../assets/fonts/Figtree-Regular.ttf");
+  font-weight: normal;
+}
+h1,
+h2,
+h3 {
+  font-family: "Figtree";
+}
+
 h1 {
   font-size: 8rem;
   margin-bottom: 1rem;
@@ -267,7 +283,14 @@ h3 {
   font-size: 2rem;
 }
 
+h4 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
 p {
+  font-family: "Roboto Regular";
   font-size: 1.2rem;
 }
 
@@ -278,6 +301,11 @@ strong {
 @media (max-width: 720px) {
   h2 {
     font-size: 2.2rem;
+  }
+}
+@media (max-width: 480px) {
+  h1 {
+    font-size: 6rem;
   }
 }
 header {
@@ -377,9 +405,12 @@ nav ul li:hover:after {
 #intro .innerWrapper {
   margin-top: 250px;
 }
+#intro h3 {
+  padding: 0 0.5rem;
+}
 
 #intro.darkMode {
-  background-image: linear-gradient(188deg, #7F5A83 30%, black calc(30% + 2px));
+  background-image: linear-gradient(188deg, #7F5A83 30%, #1b1b1b calc(30% + 2px));
 }
 #intro.darkMode h1, #intro.darkMode h3 {
   color: white;
@@ -557,9 +588,7 @@ nav ul li:hover:after {
 #projects {
   min-height: 40vh;
   padding: 0;
-}
-#projects p {
-  text-shadow: none;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
 }
 #projects h2 {
   width: 80%;
@@ -626,6 +655,7 @@ nav ul li:hover:after {
 
 .projectContentContainer {
   width: 50%;
+  color: #fff;
 }
 .projectContentContainer h3 {
   margin-top: 0;
@@ -641,6 +671,7 @@ nav ul li:hover:after {
       justify-content: space-around;
   font-size: 1.5rem;
   margin-top: 1rem;
+  color: #fff;
 }
 .projectLinks a {
   -webkit-transition: 0.3s ease-in-out;
@@ -760,7 +791,7 @@ nav ul li:hover:after {
 }
 
 #contact.darkMode {
-  background-image: linear-gradient(174deg, black 50%, #7F5A83 calc(50% + 2px));
+  background-image: linear-gradient(174deg, #1b1b1b 50%, #7F5A83 calc(50% + 2px));
 }
 
 #contact.lightMode {
@@ -804,17 +835,21 @@ nav ul li:hover:after {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  background: white;
-  color: black;
+  background: #fff;
+  text-transform: uppercase;
+  font-family: "Figtree";
+  font-weight: 800;
+  letter-spacing: 0.2rem;
+  color: #2b2b2b;
   border: none;
-  padding: 0.5rem 2rem;
-  font: inherit;
+  padding: 1rem 2rem;
   cursor: pointer;
   outline: inherit;
 }
 
 .contactLinks {
   width: 40%;
+  color: #fff;
 }
 .contactLinks ul {
   display: -webkit-box;
@@ -836,6 +871,8 @@ nav ul li:hover:after {
           box-shadow: 20px 20px rgba(0, 0, 0, 0.3);
 }
 .exitBlurb p {
+  color: #fff;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
   font-size: 1.3rem;
 }
 
@@ -850,6 +887,9 @@ nav ul li:hover:after {
   }
 }
 @media (max-width: 1080px) {
+  #contact.lightMode .contactLinks {
+    color: #2b2b2b;
+  }
   .contactContent {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -889,6 +929,9 @@ nav ul li:hover:after {
     border-radius: 1rem;
     -webkit-box-shadow: 20px 20px rgba(0, 0, 0, 0.1);
             box-shadow: 20px 20px rgba(0, 0, 0, 0.1);
+  }
+  .contactForm button {
+    border-radius: 1rem;
   }
 }
 footer {
