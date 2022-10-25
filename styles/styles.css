@@ -581,8 +581,31 @@ nav ul li:hover:after {
   font-size: 5rem;
 }
 
+#skills.darkMode li:hover .skillIcon, #skills.lightMode li:hover .skillIcon {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-filter: invert(89%) sepia(9%) saturate(1075%) hue-rotate(161deg) brightness(95%) contrast(89%);
+          filter: invert(89%) sepia(9%) saturate(1075%) hue-rotate(161deg) brightness(95%) contrast(89%);
+}
+
+#skills.darkMode .skillIcon {
+  -webkit-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(223deg) brightness(102%) contrast(101%);
+          filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(223deg) brightness(102%) contrast(101%);
+}
+
 #skills.lightMode fieldset {
   border-color: black;
+}
+#skills.lightMode .skillIcon {
+  -webkit-filter: invert(14%) sepia(0%) saturate(648%) hue-rotate(159deg) brightness(93%) contrast(89%);
+          filter: invert(14%) sepia(0%) saturate(648%) hue-rotate(159deg) brightness(93%) contrast(89%);
+}
+
+.skillIcon {
+  width: 5rem;
+  margin: auto;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 @media (max-width: 900px) {

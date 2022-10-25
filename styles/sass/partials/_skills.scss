@@ -34,11 +34,12 @@
         margin-bottom: 25px;
     }
 
-    li:hover{
+    li:hover {
         i {
             color: lightblue;
             transform: scale(1.2);
         }
+
         span {
             color: lightblue;
             opacity: 1;
@@ -56,10 +57,33 @@
     }
 }
 
-#skills.lightMode fieldset{
-    border-color: black;
+#skills.darkMode, #skills.lightMode {
+    li:hover .skillIcon {
+        transform: scale(1.2);
+        filter: invert(89%) sepia(9%) saturate(1075%) hue-rotate(161deg) brightness(95%) contrast(89%);
+    }
 }
 
+#skills.darkMode {
+    .skillIcon {
+        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(223deg) brightness(102%) contrast(101%);
+    }
+}
+
+#skills.lightMode {
+    fieldset {
+        border-color: black;
+    }
+    .skillIcon {
+        filter: invert(14%) sepia(0%) saturate(648%) hue-rotate(159deg) brightness(93%) contrast(89%);
+    }
+}
+
+.skillIcon {
+    width: 5rem;
+    margin: auto;
+    transition: 0.5s;
+}
 
 @media (max-width: 900px) {
     #skills {
@@ -74,9 +98,11 @@
         ul {
             margin-bottom: -20px;
         }
-        li{
+
+        li {
             margin-bottom: 20px;
         }
+
         i {
             font-size: 3rem;
         }
