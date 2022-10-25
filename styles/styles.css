@@ -616,8 +616,8 @@ nav ul li:hover:after {
   #skills li {
     margin-bottom: 20px;
   }
-  #skills i {
-    font-size: 3rem;
+  #skills .skillIcon {
+    height: 3rem;
   }
 }
 #projects {
