@@ -52,6 +52,10 @@ strong {
     color: $accentColorTwo;
 }
 
+.smallBreak {
+    display: none;
+}
+
 @media (max-width: 720px) {
     h2 {
         font-size: 2.2rem;
@@ -61,5 +65,8 @@ strong {
 @media (max-width: 480px) {
     h1 {
         font-size: 6rem;
+    }
+    .smallBreak {
+        display: block;
     }
 }
