@@ -35,11 +35,6 @@
     }
 
     li:hover {
-        i {
-            color: lightblue;
-            transform: scale(1.2);
-        }
-
         span {
             color: lightblue;
             opacity: 1;
@@ -50,10 +45,6 @@
         margin-top: 20px;
         opacity: 0;
         transition: opacity 0.5s ease-in-out;
-    }
-
-    i {
-        font-size: 5rem;
     }
 }
 
@@ -80,7 +71,7 @@
 }
 
 .skillIcon {
-    width: 5rem;
+    height: 5rem;
     margin: auto;
     transition: 0.5s;
 }

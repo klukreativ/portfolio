@@ -87,18 +87,8 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-
-    i {
-        font-size: 2.2rem;
-        z-index: 1;
-
-        &:hover {
-            color: lightblue;
-            transform: scale(1.5);
-        }
-    }
     img {
-        width: 2.2rem;
+        height: 2.2rem;
         margin: 0;
         filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(223deg) brightness(102%) contrast(101%);
         &:hover {

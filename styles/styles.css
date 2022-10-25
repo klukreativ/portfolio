@@ -227,6 +227,10 @@ a {
   right: 2rem;
   bottom: 2rem;
 }
+#backToTop .skillIcon {
+  width: 2rem;
+  padding-bottom: 1.5rem;
+}
 
 .backToTopBtn {
   background-color: rgba(201, 193, 159, 0.4);
@@ -562,11 +566,6 @@ nav ul li:hover:after {
           justify-content: center;
   margin-bottom: 25px;
 }
-#skills li:hover i {
-  color: lightblue;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-}
 #skills li:hover span {
   color: lightblue;
   opacity: 1;
@@ -576,9 +575,6 @@ nav ul li:hover:after {
   opacity: 0;
   -webkit-transition: opacity 0.5s ease-in-out;
   transition: opacity 0.5s ease-in-out;
-}
-#skills i {
-  font-size: 5rem;
 }
 
 #skills.darkMode li:hover .skillIcon, #skills.lightMode li:hover .skillIcon {
@@ -602,7 +598,7 @@ nav ul li:hover:after {
 }
 
 .skillIcon {
-  width: 5rem;
+  height: 5rem;
   margin: auto;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -730,17 +726,8 @@ nav ul li:hover:after {
       flex-wrap: wrap;
   gap: 20px;
 }
-.projectTools i {
-  font-size: 2.2rem;
-  z-index: 1;
-}
-.projectTools i:hover {
-  color: lightblue;
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
-}
 .projectTools img {
-  width: 2.2rem;
+  height: 2.2rem;
   margin: 0;
   -webkit-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(223deg) brightness(102%) contrast(101%);
           filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(223deg) brightness(102%) contrast(101%);
@@ -832,21 +819,39 @@ nav ul li:hover:after {
   min-height: 40vh;
   margin-bottom: -5px;
 }
+#contact .skillIcon {
+  width: 3rem;
+}
 #contact li {
   font-size: 3rem;
-}
-#contact li i:hover {
-  color: lightblue;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
 }
 
 #contact.darkMode {
   background-image: linear-gradient(174deg, #1b1b1b 50%, #7F5A83 calc(50% + 2px));
 }
+#contact.darkMode .skillIcon {
+  -webkit-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(223deg) brightness(102%) contrast(101%);
+          filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(223deg) brightness(102%) contrast(101%);
+}
+#contact.darkMode .skillIcon:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-filter: invert(89%) sepia(9%) saturate(1075%) hue-rotate(161deg) brightness(95%) contrast(89%);
+          filter: invert(89%) sepia(9%) saturate(1075%) hue-rotate(161deg) brightness(95%) contrast(89%);
+}
 
 #contact.lightMode {
   background-image: linear-gradient(174deg, lavender 50%, #7F5A83 calc(50% + 2px));
+}
+#contact.lightMode .skillIcon {
+  -webkit-filter: invert(14%) sepia(0%) saturate(648%) hue-rotate(159deg) brightness(93%) contrast(89%);
+          filter: invert(14%) sepia(0%) saturate(648%) hue-rotate(159deg) brightness(93%) contrast(89%);
+}
+#contact.lightMode .skillIcon:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-filter: invert(89%) sepia(9%) saturate(1075%) hue-rotate(161deg) brightness(95%) contrast(89%);
+          filter: invert(89%) sepia(9%) saturate(1075%) hue-rotate(161deg) brightness(95%) contrast(89%);
 }
 
 .contactContent {
@@ -906,11 +911,10 @@ nav ul li:hover:after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2.5rem;
   padding: 3rem;
 }
 
@@ -957,10 +961,6 @@ nav ul li:hover:after {
   .contactLinks ul {
     padding: 0;
     margin-top: 2rem;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
     -webkit-box-align: space-between;
         -ms-flex-align: space-between;
             align-items: space-between;
@@ -976,7 +976,8 @@ nav ul li:hover:after {
   }
 }
 @media (max-width: 480px) {
-  .contactForm, .exitBlurb {
+  .contactForm,
+.exitBlurb {
     border-radius: 1rem;
     -webkit-box-shadow: 20px 20px rgba(0, 0, 0, 0.1);
             box-shadow: 20px 20px rgba(0, 0, 0, 0.1);
