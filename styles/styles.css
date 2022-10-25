@@ -258,11 +258,13 @@ a {
   font-family: "Roboto Regular";
   src: url("../assets/fonts/Roboto-Regular.ttf");
   font-weight: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "Figtree";
   src: url("../assets/fonts/Figtree-Regular.ttf");
   font-weight: normal;
+  font-display: swap;
 }
 h1,
 h2,
@@ -294,6 +296,7 @@ h4 {
 p {
   font-family: "Roboto Regular", serif;
   font-size: 1.2rem;
+  text-shadow: none;
 }
 
 strong {
