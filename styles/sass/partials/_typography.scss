@@ -16,7 +16,7 @@
 
 h1,
 h2,
-h3, #jobTitle span {
+h3, .jobTitle span {
     font-family: $headingFont, Garamond;
     
 }
@@ -32,7 +32,7 @@ h2 {
     text-shadow: 1px 1px rgba(0,0,0,0.3);
 }
 
-h3,  #jobTitle span {
+h3,  .jobTitle span {
     font-size: 2rem;
 }
 
