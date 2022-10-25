@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="description" content="Hi there! I'm Karl, a Frontend Web Developer with a passion for creating responsive web pages. ">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="stylesheet" href="./styles/styles.css">
 
@@ -20,7 +20,7 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <div class="switch" aria-label="dark mode switch">
+            <div class="switch">
                 <label class="theme-switch" for="checkbox">
                     <input type="checkbox" id="checkbox" />
                     <div class="darkModeSlider round"></div>
@@ -34,17 +34,19 @@
             <section id="intro" class="themed darkMode">
                 <div class="innerWrapper">
                     <h1>Karl Lu</h1>
-                    <h3>Frontend Web Developer</h2>
+                    <div class="jobTitle">
+                        <span>Frontend Web Developer</span>
+                    </div>
                 </div>
             </section>
             <section id="about">
                 <div class="aboutTriangleContainer" aria-hidden="true">
-                    <img src="./assets/images/secTri.png" alt="decorative triangle" class="aboutTriangle">
+                    <img src="./assets/images/secTri.webp" alt="decorative triangle" class="aboutTriangle">
                 </div>
 
                 <div class="aboutContent innerWrapper">
                     <div class="aboutImgContainer reveal fade-left">
-                        <img src="./assets/images/profile.jpg" alt="profile image of Karl" class="aboutImage">
+                        <img src="./assets/images/profile.webp" alt="profile image of Karl" class="aboutImage">
                     </div>
                     <div class="aboutContentContainer reveal fade-right">
                         <h2>. &frasl;about</h2>
@@ -100,7 +102,7 @@
                 <div class="projectContainer">
                     <div class="project left reveal fade-left">
                         <div class="projectImgContainer">
-                            <img src="./assets/images/drinkoclock.png" alt="">
+                            <img src="./assets/images/drinkoclock.webp" alt="">
                             <div class="projectLinks">
                                 <a href="https://drinkoclock.netlify.app"><span>Live Site</span></a> |
                                 <a href="https://github.com/drinkoclock/drinkOclock"><span>Github</span></a>
@@ -128,7 +130,7 @@
 
                     <div class="project right reveal fade-right">
                         <div class="projectImgContainer">
-                            <img src="./assets/images/restaurantmall.png" alt="">
+                            <img src="./assets/images/restaurantmall.webp" alt="">
                             <div class="projectLinks">
                                 <a href="https://kl-the-restaurant-mall.netlify.app/"><span>Live Site</span></a> |
                                 <a href="https://github.com/lunarpirate/restaurant-mall"><span>Github</span></a>
@@ -153,7 +155,7 @@
 
                     <div class="project left reveal fade-left">
                         <div class="projectImgContainer">
-                            <img src="./assets/images/uvaro.png" alt="">
+                            <img src="./assets/images/uvaro.webp" alt="">
                             <div class="projectLinks">
                                 <a href="https://uvaro.com/podcast"><span>Live Site</span></a>
                             </div>
@@ -209,9 +211,9 @@
                                 </p>
                             </div>
                             <ul>
-                                <li><a href="https://www.linkedin.com/in/karl-lu/"><i class="fa-brands fa-linkedin"></i></a></li>
-                                <li><a href="https://github.com/lunarpirate"><i class="fa-brands fa-github"></i></a></li>
-                                <li><a href="mailto:karl.lu@outlook.com"><i class="fa-solid fa-envelope"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/karl-lu/" aria-label="Go to Karl's LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
+                                <li><a href="https://github.com/lunarpirate"><i class="fa-brands fa-github" aria-label="Go to Karl's GitHub repo"></i></a></li>
+                                <li><a href="mailto:karl.lu@outlook.com" aria-label="Send email to Karl"><i class="fa-solid fa-envelope"></i></a></li>
                             </ul>
                         </div>
                     </div>

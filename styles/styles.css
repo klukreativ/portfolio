@@ -229,7 +229,7 @@ a {
 }
 
 .backToTopBtn {
-  background-color: #C9C19F;
+  background-color: rgba(201, 193, 159, 0.4);
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
@@ -266,20 +266,22 @@ a {
 }
 h1,
 h2,
-h3 {
-  font-family: "Figtree";
+h3, #jobTitle span {
+  font-family: "Figtree", Garamond;
 }
 
 h1 {
   font-size: 8rem;
   margin-bottom: 1rem;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
 }
 
 h2 {
   font-size: 3rem;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
 }
 
-h3 {
+h3, #jobTitle span {
   font-size: 2rem;
 }
 
@@ -290,7 +292,7 @@ h4 {
 }
 
 p {
-  font-family: "Roboto Regular";
+  font-family: "Roboto Regular", serif;
   font-size: 1.2rem;
 }
 
@@ -405,14 +407,25 @@ nav ul li:hover:after {
 #intro .innerWrapper {
   margin-top: 250px;
 }
+#intro .jobTitle {
+  padding-left: 0.3rem;
+}
 #intro h3 {
-  padding: 0 0.5rem;
+  display: inline;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: linear-gradient(120deg, rgba(201, 145, 223, 0.6) 0%, rgba(103, 140, 148, 0.6) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 25%;
+  background-position: 0 120%;
 }
 
 #intro.darkMode {
   background-image: linear-gradient(188deg, #7F5A83 30%, #1b1b1b calc(30% + 2px));
 }
-#intro.darkMode h1, #intro.darkMode h3 {
+#intro.darkMode h1,
+#intro.darkMode h3 {
   color: white;
 }
 
